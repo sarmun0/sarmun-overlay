@@ -1,0 +1,28 @@
+diff --git a/src/custom.h b/src/custom.h
+index 4303945..5bd6f2b 100644
+--- a/src/custom.h
++++ b/src/custom.h
+@@ -31,8 +31,8 @@
+ /* The Letter version is appropriate for North America; the A4 version */
+ /* is appropriate for Europe.                                          */
+ /*---------------------------------------------------------------------*/
+-#define DEFAULT_PAGE {"Letter", 612, 792}
+-/* #define DEFAULT_PAGE {"A4", 595, 842} */
++//#define DEFAULT_PAGE {"Letter", 612, 792}
++ #define DEFAULT_PAGE {"A4", 595, 842} 
+ 
+ /*---------------------------------------------------------------------*/
+ /* DATESEP:  The default date separator.  Standard usage is '-';       */
+diff --git a/src/lang.h b/src/lang.h
+index 342daeb..23eed5d 100644
+--- a/src/lang.h
++++ b/src/lang.h
+@@ -40,7 +40,7 @@
+  *                                                                      *
+  ************************************************************************/
+ #ifndef LANG  /* Allow for definition on compiler command line */
+-#define LANG ENGLISH
++#define LANG POLISH
+ #endif
+ 
+ /* Pick up the appropriate header file */

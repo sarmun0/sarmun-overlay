@@ -23,7 +23,10 @@ DEPEND="${RDEPEND}
 "
 DOCS="docs/* examples/defs.rem "
 
-PATCHES=( "${FILESDIR}"/${PN}-include-fix.patch )
+PATCHES=(
+	"${FILESDIR}"/${PN}-include-fix.patch
+	"${FILESDIR}"/${PN}-pl.patch
+)
 
 src_test() {
 	if [[ ${EUID} -eq 0 ]] ; then
