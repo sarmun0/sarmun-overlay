@@ -10,7 +10,7 @@ SRC_URI="https://salsa.debian.org/dskoll/remind/-/archive/${PV}/${P}.tar.bz2"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~x86"
-IUSE="tk"
+IUSE="tk pl"
 
 RDEPEND="
 	tk? ( >=dev-lang/tk-8.5 dev-tcltk/tcllib )
@@ -25,7 +25,7 @@ DOCS="docs/* examples/defs.rem "
 
 PATCHES=(
 	"${FILESDIR}"/${PN}-include-fix.patch
-	"${FILESDIR}"/${PN}-pl.patch
+#	"${FILESDIR}"/${PN}-pl.patch
 )
 
 src_test() {
@@ -34,6 +34,13 @@ src_test() {
 	else
 		emake test
 	fi
+}
+
+src_prepare() {
+	if use pl ; then
+		epatch "${FILESDIR}"/${PN}-pl.patch
+	fi
+	default
 }
 
 src_install() {
