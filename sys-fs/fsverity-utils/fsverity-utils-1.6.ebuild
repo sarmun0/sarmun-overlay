@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-DESCRIPTION="Userspace utils for fs-"
+DESCRIPTION="Userspace utils for fs-verity"
 HOMEPAGE="https://kernel.org"
 SRC_URI="https://git.kernel.org/pub/scm/fs/fsverity/fsverity-utils.git/snapshot/${P}.tar.gz"
 LICENSE="MIT"
