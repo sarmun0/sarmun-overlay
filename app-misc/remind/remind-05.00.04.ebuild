@@ -5,7 +5,7 @@ EAPI=8
 
 DESCRIPTION="Ridiculously functional reminder program"
 HOMEPAGE="https://dianne.skoll.ca/projects/remind/"
-SRC_URI="https://salsa.debian.org/dskoll/remind/-/archive/${PV}/${P}.tar.bz2"
+SRC_URI="https://dianne.skoll.ca/projects/remind/download/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -23,7 +23,6 @@ DEPEND="${RDEPEND}
 DOCS="docs/* examples/defs.rem "
 
 PATCHES=(
-	"${FILESDIR}"/${PN}-include-fix.patch
 	"${FILESDIR}"/${PN}-pl.patch
 )
 
