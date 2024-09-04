@@ -1,0 +1,33 @@
+diff --git a/mandoc/configure b/mandoc/configure
+index 5cf4e08..5252a10 100755
+--- a/mandoc/configure
++++ b/mandoc/configure
+@@ -102,13 +102,13 @@ NEED_XPG4_2=0
+ MANDOC_COBJS=
+ SOELIM_COBJS=
+ 
+-PREFIX="/usr/local"
++PREFIX="/usr"
+ BINDIR=
+ SBINDIR=
+ BIN_FROM_SBIN=
+ INCLUDEDIR=
+ LIBDIR=
+-MANDIR=
++MANDIR="/usr/share/man"
+ READ_ALLOWED_PATH=
+ 
+ WWWPREFIX="/var/www"
+diff --git a/mangl.desktop b/mangl.desktop
+index 6fcbbd5..1c54cb2 100644
+--- a/mangl.desktop
++++ b/mangl.desktop
+@@ -2,7 +2,7 @@
+ Encoding=UTF-8
+ Version=1.0
+ Type=Application
+-Terminal=False
++Terminal=false
+ Name=Mangl
+ Comment=An enhanced man page viewer
+ Categories=Utility;Development;
