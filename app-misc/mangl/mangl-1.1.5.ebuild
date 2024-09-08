@@ -9,4 +9,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 PATCHES=(
 	${FILESDIR}/"${PN}.patch"
-	)
+)
+DEPEND=(
+	media-libs/glfw
+)
