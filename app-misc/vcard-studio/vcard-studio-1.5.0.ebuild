@@ -80,7 +80,7 @@ KEYWORDS="~amd64"
 # Comprehensive list of any and all USE flags leveraged in the ebuild,
 # with some exceptions, e.g., ARCH specific flags like "amd64" or "ppc".
 # Not needed if the ebuild doesn't use any USE flags.
-IUSE="gnome X"
+#IUSE="gnome X"
 
 # A space delimited list of portage features to restrict. man 5 ebuild
 # for details.  Usually not needed.
@@ -172,5 +172,5 @@ IUSE="gnome X"
 	# outside of ${D}.
 #}
 src_install() {
-	doins -r ${WORKDIR}/*
+	doins -r ${S}/*
 }
