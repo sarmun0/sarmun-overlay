@@ -8,7 +8,7 @@ DESCRIPTION="GUI for vcards"
 HOMEPAGE="https://app.zdechov.net/vcard-studio/"
 SRC_URI="https://svn.zdechov.net/${PN}/bin/${P}.x86_64.rpm"
 S="${WORKDIR}"
-LICENSE="public-domain"
+LICENSE="CC0-1.0"
 SLOT="0"
 KEYWORDS="~amd64"
 
