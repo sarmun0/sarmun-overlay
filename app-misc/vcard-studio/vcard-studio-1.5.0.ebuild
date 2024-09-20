@@ -172,6 +172,6 @@ KEYWORDS="~amd64"
 	# outside of ${D}.
 #}
 src_install() {
-	chmod +x ${S}/usr/bin/vCardStudio
 	doins -r ${S}/*
+	fperms 755 /usr/bin/vCardStudio
 }
