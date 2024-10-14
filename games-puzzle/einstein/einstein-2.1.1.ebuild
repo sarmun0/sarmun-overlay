@@ -1,7 +1,7 @@
 # Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=8
 inherit desktop
 
 DESCRIPTION="A puzzle game inspired by Albert Einstein"
@@ -31,7 +31,7 @@ src_prepare() {
 }
 
 src_install() {
-	dobin "${PN}"
+	#dobin "${PN}"
 	insinto "/usr/share/${PN}/res"
 	doins einstein.res
 	doicon "${DISTDIR}"/${PN}.png
